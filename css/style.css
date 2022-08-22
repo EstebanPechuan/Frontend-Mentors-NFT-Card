@@ -28,6 +28,7 @@ main {
     padding: 20px;
     border-radius: 15px;
     background: var(--dark-blue2);
+    scale: 1.1;
 
     display: flex;
     flex-direction: column;
@@ -105,8 +106,4 @@ hr {
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
-}
-
-body {
-    scale: 1.2;
 }
