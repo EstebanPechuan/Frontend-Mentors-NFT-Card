@@ -106,3 +106,7 @@ hr {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+body {
+    scale: 1.2;
+}
