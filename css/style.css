@@ -35,14 +35,47 @@ main {
     gap: 20px;
 }
 
-main > img {
+.img-equil {
     width: 100%;
+    position: relative;
     border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.img-equil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img-equil:hover .cyan {
+    opacity: 1;
+}
+
+.cyan {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: hsla(178, 51%, 55%, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.4s;
+}
+.cyan img {
+    width: 30px;
+    height: 30px;
 }
 
 h1 {
     color: #fff;
     font-size: 20px;
+}
+h1:hover {
+    color: var(--cyan);
+    cursor: pointer;
 }
 
 main > p {
@@ -94,6 +127,11 @@ hr {
     color: var(--white);
     font-weight: normal;
 }
+.avatar + p span:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
 
 .attribution {
     width: 100%;
